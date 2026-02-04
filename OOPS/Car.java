@@ -12,7 +12,9 @@ public class Car {
      public void setColor(String color){
         this.color=color;
     }
-    
+    public String getColor(){
+        return this.color;
+    }
     public void displayCar(){
         System.out.println(color);
         System.out.println(price);

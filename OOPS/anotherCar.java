@@ -6,8 +6,6 @@ public class anotherCar {
         Car c2 = new Car("black", 1900000, 130);
 
       
-        c2.displayCar();
-        c1.setColor("pink");
-          c1.displayCar();
-    }
+       System.out.println( c1.getColor());
+}
 }
