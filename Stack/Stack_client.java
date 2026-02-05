@@ -9,7 +9,8 @@ public class Stack_client {
         st.push(40);
         st.push(50);
         System.out.println(st.isFull());
-        System.out.println(st.pop());
+       System.out.println(st.peek());
+
     
     }
     

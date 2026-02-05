@@ -32,5 +32,9 @@ public class Stack {
         top--;
         return rem;
     }
+    public int peek(){
+        int rem=arr[top];
+        return rem;
+    }
     
 }
