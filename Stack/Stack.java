@@ -39,5 +39,10 @@ public class Stack {
     public int size(){
         return top+1;
     }
+    public void display(){
+        for(int i=0;i<=top;i++){
+            System.out.println(arr[i]+" ");
+        }
+    }
     
 }
