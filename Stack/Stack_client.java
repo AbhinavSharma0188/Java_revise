@@ -1,7 +1,7 @@
 package Stack;
 
 public class Stack_client {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         Stack st=new Stack();
         st.push(10);
         st.push(20);
@@ -9,6 +9,8 @@ public class Stack_client {
         st.push(40);
         st.push(50);
         System.out.println(st.isFull());
+        System.out.println(st.pop());
+    
     }
     
     

@@ -19,10 +19,18 @@ public class Stack {
     public boolean isFull(){
         return top==arr.length-1;
     }
-    public void push(int item){
+    public void push(int item) throws Exception{
+        if(isFull()){
+            throw new Exception("Stack is full");
+        }
         top++;
         arr[top]=item;
 
+    }
+    public int pop(){
+        int rem=arr[top];
+        top--;
+        return rem;
     }
     
 }
