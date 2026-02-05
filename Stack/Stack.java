@@ -36,5 +36,8 @@ public class Stack {
         int rem=arr[top];
         return rem;
     }
+    public int size(){
+        return top+1;
+    }
     
 }
