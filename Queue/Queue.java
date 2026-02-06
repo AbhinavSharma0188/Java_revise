@@ -18,10 +18,21 @@ public class Queue {
     public boolean isFull(){
         return size==arr.length;
     }
-    public void enque(int element){
+    public void enque(int element) throws Exception{
+        if(isFull()){
+            throw new Exception("Queue is full");
+        }
         arr[size]=element;
         size++;
        
+    }
+    public int deque(){
+        int rev=arr[front];
+        front++;
+        size--;
+        return rev;
+       
+        
     }
 
     
