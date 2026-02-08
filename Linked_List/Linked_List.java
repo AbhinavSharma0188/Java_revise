@@ -28,7 +28,15 @@ public class Linked_List {
 
 
     }
-   
+    public void Display(){
+        Node temp=head;
+        while (temp!=null) {
+           System.out.println(temp.val);
+            temp=temp.next;
+           
+            
+        }
+    }
 
 
 }
