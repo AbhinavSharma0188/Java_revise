@@ -7,9 +7,28 @@ public class Linked_List {
 
 
     }
-    private Node head;
+    private Node head;//first node 
     private int size;
-    private int tail;
-    
-    
+    private Node tail;//last node 
+    public void addFirst(int item){
+        Node nn=new Node();
+        nn.val=item;
+        if(size==0){
+            head=nn;
+            tail=nn;
+            size++;
+        }
+        else{
+            nn.next=head;
+            head=nn;
+            size++;
+
+        }
+     
+
+
+    }
+   
+
+
 }
