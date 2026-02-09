@@ -40,6 +40,18 @@ public class Linked_List {
             size++;
         }
     }
+    private Node GetNode(int k)throws Exception{
+        if(k<0||k>=size){
+            throw new Exception("Exception here");
+        }
+        Node temp=head;
+        for(int i=0;i<=k-1;i++){
+            temp=temp.next;
+        }
+
+        return temp;
+
+    }
     public void Display(){
         Node temp=head;
         while (temp!=null) {
