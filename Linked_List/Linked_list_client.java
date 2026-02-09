@@ -6,6 +6,7 @@ public class Linked_list_client {
         ll.addFirst(10);
         ll.addFirst(20);
         ll.addFirst(30);
+        ll.addLast(51);
       ll.Display();
        
         

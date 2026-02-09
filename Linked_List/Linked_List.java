@@ -28,10 +28,22 @@ public class Linked_List {
 
 
     }
+    public void addLast(int item){
+        if(size==0){
+            addFirst(item);
+        }
+        else{
+            Node nn=new Node();
+            nn.val=item;
+            tail.next=nn;
+            tail=nn;
+            size++;
+        }
+    }
     public void Display(){
         Node temp=head;
         while (temp!=null) {
-           System.out.println(temp.val);
+           System.out.print(temp.val+"->");
             temp=temp.next;
            
             
