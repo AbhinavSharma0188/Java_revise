@@ -40,7 +40,7 @@ public class Linked_List {
             size++;
         }
     }
-    private Node GetNode(int k)throws Exception{
+    private Node GetNode(int k) throws Exception{
         if(k<0||k>=size){
             throw new Exception("Exception here");
         }
@@ -50,6 +50,34 @@ public class Linked_List {
         }
 
         return temp;
+
+    }
+    public void addAtIndex(int k,int item) throws Exception{
+        if(k==0){
+            addFirst(item);
+        }
+       else if(k==size){
+            addLast(item);
+        }
+        else{
+            Node k_1th=GetNode(k-1);
+            Node nn=new Node();
+            nn.val=item;
+            nn.next=k_1th.next;
+            k_1th.next=nn;
+        }
+
+    }
+    public int getFirst(){
+        return head.val;
+
+    }
+    public int getLast(){
+        return tail.val;
+
+    }
+    public int getAtIndex(int k) throws Exception{
+        return GetNode(k).val;
 
     }
     public void Display(){
