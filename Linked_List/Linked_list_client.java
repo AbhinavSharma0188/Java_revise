@@ -12,6 +12,11 @@ ll.addLast(81);
 ll.addLast(90);
 ll.addAtIndex(2, -880);
       ll.Display();
+      System.out.println();
+      System.out.println(ll.getFirst());
+      System.out.println(ll.getLast());
+      System.out.println(ll.getAtIndex(2));
+      
        
         
     }
