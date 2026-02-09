@@ -13,7 +13,10 @@ ll.addLast(90);
 ll.addAtIndex(2, -880);
       ll.Display();
       System.out.println();
-     System.out.println( ll.removefirst());
+    System.out.println(ll.removelast());
+     
+     ll.Display();
+     
      
       
       

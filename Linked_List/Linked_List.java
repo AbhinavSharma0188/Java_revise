@@ -65,6 +65,7 @@ public class Linked_List {
             nn.val=item;
             nn.next=k_1th.next;
             k_1th.next=nn;
+            size++;
         }
 
     }
@@ -86,6 +87,19 @@ public class Linked_List {
        temp.next=null;
        size--;
        return temp.val;
+    }
+    public int removelast() throws Exception{
+        Node temp=tail;
+        Node prev=GetNode(size-2);
+        tail=prev;
+        tail.next=null;
+        size--;
+        return temp.val;
+
+
+
+
+
     }
     public void Display(){
         Node temp=head;
