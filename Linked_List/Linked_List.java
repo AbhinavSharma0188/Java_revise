@@ -80,8 +80,12 @@ public class Linked_List {
         return GetNode(k).val;
 
     }
-    public void removefirst(){
-        head=head.next;
+    public int removefirst(){
+       Node temp=head;
+       head=head.next;
+       temp.next=null;
+       size--;
+       return temp.val;
     }
     public void Display(){
         Node temp=head;
