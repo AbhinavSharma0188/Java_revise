@@ -101,6 +101,15 @@ public class Linked_List {
 
 
     }
+    public int removeAtIndex(int k) throws Exception {
+        if(k==0){
+            return removefirst();
+        }
+        else if(k==size-1){
+          return removelast();
+        }
+
+    }
     public void Display(){
         Node temp=head;
         while (temp!=null) {
