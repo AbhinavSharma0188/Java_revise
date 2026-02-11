@@ -1,10 +1,21 @@
-public class partition {
+public class QuickSort {
     public static void main(String[] args) {
         int arr[]={8,7,3,1,4};
-       int idx= partition(arr,0,arr.length-1);
-        System.out.println(idx);
+        Sort(arr,0,arr.length-1);
+        for(int i=0;i<=arr.length-1;i++){
+            System.out.print(arr[i]+" ");
+        }
+
     }
-    public static int partition(int arr[],int si,int ei){
+    public static void Sort(int arr[],int si,int ei){
+        if(si>=ei){
+            return;
+        }
+        int idx=partition(arr,si,ei);
+        Sort(arr,si,idx-1);
+        Sort(arr,idx+1,ei);
+    }
+     public static int partition(int arr[],int si,int ei){
         int item=arr[ei];
         int idx=si;
         for(int i=si;i<ei;i++){
