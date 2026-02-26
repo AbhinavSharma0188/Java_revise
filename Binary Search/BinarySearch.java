@@ -13,8 +13,8 @@ public class BinarySearch {
                return;
             }
             else if(arr[mid]>target){
-                ei=mid-1;
-
+                ei=mid-1;;
+ 
             }
             else{
                 si=mid+1;
