@@ -77,6 +77,25 @@ size++;
             size++;
         }
     }
+    public int getFirst(){
+        if(size==0){
+            throw new IndexOutOfBoundsException();
+        }
+        return head.val;
+    }
+    public int getLast(){
+        if(size==0){
+            throw new IndexOutOfBoundsException();
+        }
+        return tail.val;
+    }
+    public int getAtIndex(int idx){
+        if(idx<0||idx>=size){
+            throw new IndexOutOfBoundsException();
+        }
+        Node temp=getnode(idx);
+        return temp.val;
+    }
     public static void main(String[] args) {
         Linked_List l1=new Linked_List();
         l1.addFirst(10);
