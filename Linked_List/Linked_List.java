@@ -38,6 +38,22 @@ size++;
         return temp;
         
     }
+    public void addAtIndex(int idx,int item){
+        if(idx==0){
+            addFirst(item);
+            return;
+        }
+        if(idx==size){
+            addLast(item);
+            return;
+        }
+        Node nn=new Node();
+        nn.val=item;
+        Node temp=getnode(idx-1);
+        nn.next=temp.next;
+        temp.next=nn;
+        size++;
+    }
     public void Display(){
         Node temp=head;
 
