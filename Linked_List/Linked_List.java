@@ -96,6 +96,42 @@ size++;
         Node temp=getnode(idx);
         return temp.val;
     }
+    public int removeFirst(){
+        if(size==0){
+            throw new IndexOutOfBoundsException();
+        }
+        int val=head.val;
+        head=head.next;
+        size--;
+        return val;
+    }
+    public int removeLast(){
+        if(size==0){
+            throw new IndexOutOfBoundsException();
+        }
+        int val=tail.val;
+        Node temp=getnode(size-2);
+        temp.next=null;
+        tail=temp;
+        size--;
+        return val;
+    }
+    public int removeAtIndex(int idx){
+        if(idx<0||idx>=size){
+            throw new IndexOutOfBoundsException();
+        }
+        if(idx==0){
+            return removeFirst();
+        }
+        if(idx==size-1){
+            return removeLast();
+        }
+        Node temp=getnode(idx-1);
+        int val=temp.next.val;
+        temp.next=temp.next.next;
+        size--;
+        return val;
+    }   
     public static void main(String[] args) {
         Linked_List l1=new Linked_List();
         l1.addFirst(10);
