@@ -35,11 +35,27 @@ size++;
             temp=temp.next;
         }
     }
+    public void addLast(int item){
+        Node nn=new Node();
+        nn.val=item;
+        if(size==0){
+            nn.next=null;
+            head=nn;
+            tail=nn;
+            size++;
+        }
+        else{
+            tail.next=nn;
+            tail=nn;
+            size++;
+        }
+    }
     public static void main(String[] args) {
         Linked_List l1=new Linked_List();
         l1.addFirst(10);
         l1.addFirst(20);
         l1.addFirst(30);
+        l1.addLast(40);
         l1.Display();
         
         
