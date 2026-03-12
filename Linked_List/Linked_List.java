@@ -27,6 +27,17 @@ size++;
 size++;
         }
     }
+    private Node getnode(int k){
+        if(k<0||k>=size){
+            throw new IndexOutOfBoundsException();
+        }
+        Node temp=head;
+        for(int i=0;i<k;i++){
+            temp=temp.next;
+        }
+        return temp;
+        
+    }
     public void Display(){
         Node temp=head;
 
