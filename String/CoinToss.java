@@ -8,7 +8,11 @@ public static void printToss(int n,String ans){
         System.out.println(ans);
         return;
     }
-    printToss(n-1, ans+"H");
+    if(ans.length()==0 || ans.charAt(ans.length()-1)!='H'){
+        printToss(n-1, ans+"H");
+
+    }
+    
     printToss(n-1, ans+"T");
 }
     
