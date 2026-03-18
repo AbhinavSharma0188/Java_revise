@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "sub",
+            "request": "launch",
+            "mainClass": "sub",
+            "projectName": "Java_revise_ece3022c"
+        },
+        {
+            "type": "java",
             "name": "LEETCODE_876",
             "request": "launch",
             "mainClass": "LEETCODE_876",
