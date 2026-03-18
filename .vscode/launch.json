@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CoinToss",
+            "request": "launch",
+            "mainClass": "CoinToss",
+            "projectName": "Java_revise_ece3022c"
+        },
+        {
+            "type": "java",
             "name": "subwithCount",
             "request": "launch",
             "mainClass": "subwithCount",
