@@ -11,7 +11,7 @@ public class DiceProblem {
         if(curr>n){
             return;
         }
-        printDice(n, curr+1, ans+1);
+        printDice(n, curr+1, ans+1);;
         printDice(n, curr+2, ans+2);;
         printDice(n, curr+3, ans+3);
         printDice(n, curr+4, ans+4);
