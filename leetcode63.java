@@ -22,6 +22,6 @@ class Solution {
             }
         }
 
-        return dp[m - 1][n - 1];;
+        return dp[m - 1][n - 1];
     }
 }
