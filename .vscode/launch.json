@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "gp",
+            "request": "launch",
+            "mainClass": "gp",
+            "projectName": "Java_revise_ece3022c"
+        },
+        {
+            "type": "java",
             "name": "DiceProblem",
             "request": "launch",
             "mainClass": "DiceProblem",
