@@ -10,7 +10,7 @@ public class permutation {
             return;
         }
 
-        for(int i=0;i<=ques.length();i++){
+        for(int i=0;i<=ques.length()-1;i++){
             char ch=ques.charAt(i);
             String ros=ques.substring(0,i)+ques.substring(i+1);
             perm(ros,ans+ch);
