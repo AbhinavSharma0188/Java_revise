@@ -1,18 +1,37 @@
+import java.util.*;
+
 class Solution {
-    public int compareVersion(String version1, String version2) {
-        String[] a = version1.split("\\.");
-        String[] b = version2.split("\\.");
+    public String fractionToDecimal(int numerator, int denominator) {
+        if (numerator == 0) return "0";
 
-        int n = Math.max(a.length, b.length);
+        StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < n; i++) {
-            int x = i < a.length ? Integer.parseInt(a[i]) : 0;
-            int y = i < b.length ? Integer.parseInt(b[i]) : 0;
+        if ((numerator < 0) ^ (denominator < 0)) sb.append("-");
 
-            if (x < y) return -1;
-            if (x > y) return 1;
+        long n = Math.abs((long) numerator);
+        long d = Math.abs((long) denominator);
+
+        sb.append(n / d);
+        long rem = n % d;
+
+        if (rem == 0) return sb.toString();
+
+        sb.append(".");
+        Map<Long, Integer> map = new HashMap<>();
+
+        while (rem != 0) {
+            if (map.containsKey(rem)) {
+                sb.insert(map.get(rem), "(");
+                sb.append(")");
+                break;
+            }
+
+            map.put(rem, sb.length());
+            rem *= 10;
+            sb.append(rem / d);
+            rem %= d;
         }
 
-        return 0;
+        return sb.toString();
     }
 }
