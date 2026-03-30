@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "coin",
+            "request": "launch",
+            "mainClass": "coin",
+            "projectName": "Java_revise_ece3022c"
+        },
+        {
+            "type": "java",
             "name": "queenPlacedSOFar",
             "request": "launch",
             "mainClass": "queenPlacedSOFar",
