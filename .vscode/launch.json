@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "queenPlacedSOFar",
+            "request": "launch",
+            "mainClass": "queenPlacedSOFar",
+            "projectName": "Java_revise_ece3022c"
+        },
+        {
+            "type": "java",
             "name": "ratinaMaze",
             "request": "launch",
             "mainClass": "ratinaMaze",
