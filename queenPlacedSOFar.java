@@ -16,7 +16,7 @@ public class queenPlacedSOFar {
         for(int i=0;i<=arr.length-1;i++){
             if(arr[i]==false){
                 arr[i]=true;
-                permutations(arr, tq, qpsf+1, ans+"b"+i+"q"+qpsf);
+                permutations(arr, tq, qpsf+1, ans+"b"+(i+1)+"q"+(qpsf+1)+" "        );
                 arr[i]=false;
             }
         }
