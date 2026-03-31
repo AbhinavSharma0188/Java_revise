@@ -3,6 +3,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "partitionn",
+            "request": "launch",
+            "mainClass": "partitionn",
+            "projectName": "Java_revise_ece3022c"
+        },
+        {
+            "type": "java",
+            "name": "partition",
+            "request": "launch",
+            "mainClass": "partition",
+            "projectName": "Java_revise_ece3022c"
+        },
+        {
+            "type": "java",
             "name": "coin",
             "request": "launch",
             "mainClass": "coin",
