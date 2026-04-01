@@ -3,6 +3,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "bitoddeven",
+            "request": "launch",
+            "mainClass": "bitoddeven",
+            "projectName": "Java_revise_ece3022c"
+        },
+        {
+            "type": "java",
+            "name": "intersection",
+            "request": "launch",
+            "mainClass": "intersection",
+            "projectName": "Java_revise_ece3022c"
+        },
+        {
+            "type": "java",
             "name": "partitionn",
             "request": "launch",
             "mainClass": "partitionn",
