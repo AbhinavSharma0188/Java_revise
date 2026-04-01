@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "checkbit",
+            "request": "launch",
+            "mainClass": "checkbit",
+            "projectName": "Java_revise_ece3022c"
+        },
+        {
+            "type": "java",
             "name": "leftShift",
             "request": "launch",
             "mainClass": "leftShift",
