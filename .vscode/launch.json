@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "rightshift",
+            "request": "launch",
+            "mainClass": "rightshift",
+            "projectName": "Java_revise_ece3022c"
+        },
+        {
+            "type": "java",
             "name": "bitoddeven",
             "request": "launch",
             "mainClass": "bitoddeven",
