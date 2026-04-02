@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "countSetBits",
+            "request": "launch",
+            "mainClass": "countSetBits",
+            "projectName": "Java_revise_ece3022c"
+        },
+        {
+            "type": "java",
             "name": "checkbit",
             "request": "launch",
             "mainClass": "checkbit",
