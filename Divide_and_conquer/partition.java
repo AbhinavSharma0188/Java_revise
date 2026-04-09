@@ -9,7 +9,7 @@ public class partition {
         int idx=si;
         for(int i=si;i<ei;i++){
             if(arr[i]<=item){
-                int temp=arr[i];
+                int temp=arr[i];;
                 arr[i]=arr[idx];
                 arr[idx]=temp;
                 idx++;
