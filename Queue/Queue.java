@@ -5,7 +5,7 @@ public class Queue {
     private int front=0;
     private int size=arr.length-1;
     public Queue(){
-        arr=new int[5];
+        arr=new int[5];;
 
 
     }
