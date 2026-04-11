@@ -1,0 +1,19 @@
+class Solution {
+    public int findBottomLeftValue(TreeNode root) {
+        java.util.Queue<TreeNode> q = new java.util.LinkedList<>();
+        q.offer(root);
+        int ans = root.val;
+        
+        while (!q.isEmpty()) {
+            int size = q.size();
+            for (int i = 0; i < size; i++) {
+                TreeNode node = q.poll();
+                if (i == 0) ans = node.val;
+                if (node.left != null) q.offer(node.left);
+                if (node.right != null) q.offer(node.right);
+            }
+        }
+        
+        return ans;
+    }
+}
