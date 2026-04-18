@@ -11,7 +11,7 @@ public class QuickSort {
         if(si>=ei){
             return;
         }
-        int idx=partition(arr,si,ei);
+        int idx=partition(arr,si,ei);;
         Sort(arr,si,idx-1);
         Sort(arr,idx+1,ei);
     }
