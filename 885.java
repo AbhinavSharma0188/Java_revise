@@ -1,21 +1,23 @@
 class Solution {
-    public int maxIncreaseKeepingSkyline(int[][] grid) {
-        int n = grid.length;
-        int[] rowMax = new int[n];
-        int[] colMax = new int[n];
+    public int[][] spiralMatrixIII(int rows, int cols, int rStart, int cStart) {
+        int[][] res = new int[rows * cols][2];
+        int[][] dirs = {{0,1},{1,0},{0,-1},{-1,0}};
         
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                rowMax[i] = Math.max(rowMax[i], grid[i][j]);
-                colMax[j] = Math.max(colMax[j], grid[i][j]);
-            }
-        }
+        int len = 0, d = 0, idx = 0;
+        int r = rStart, c = cStart;
+        res[idx++] = new int[]{r, c};
         
-        int res = 0;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                res += Math.min(rowMax[i], colMax[j]) - grid[i][j];
+        while (idx < rows * cols) {
+            if (d == 0 || d == 2) len++;
+            
+            for (int i = 0; i < len; i++) {
+                r += dirs[d][0];
+                c += dirs[d][1];
+                if (r >= 0 && r < rows && c >= 0 && c < cols) {
+                    res[idx++] = new int[]{r, c};
+                }
             }
+            d = (d + 1) % 4;
         }
         
         return res;
