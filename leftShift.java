@@ -1,8 +1,21 @@
-public class leftShift {
-    public static void main(String[] args) {
-        int n=10;
-        System.out.println(n<<1);
+class Solution {
+    public int minEatingSpeed(int[] piles, int h) {
+        int left = 1, right = 0;
+        
+        for (int pile : piles) right = Math.max(right, pile);
+        
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            long hours = 0;
+            
+            for (int pile : piles) {
+                hours += (pile + mid - 1) / mid;
+            }
+            
+            if (hours > h) left = mid + 1;
+            else right = mid;
+        }
+        
+        return left;
     }
-
-    
 }
