@@ -8,6 +8,6 @@ public class Student {
         System.out.println("My name is " + name + " and age is " + age);
     }
     public void SayHI(String name){
-        System.out.println(name+"Says hi to "+this.name);
+        System.out.println(name+"Says hi to "+this.name);;
     }
 }
